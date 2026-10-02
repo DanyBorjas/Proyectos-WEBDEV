@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Page-wide background and typography */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #D5E1EF;
+  color: #1e293b;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+/* Main content area */
+#main-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px #68778D;
+}
+
+/* QR code panel */
+#qr-container {
+  display: flex;
+  flex-direction: column;
+ 
+  text-align: center;
+}
+
+#qr-container img,
+#qr-container canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  #main-container {
+    padding: 1.25rem;
+  }
+
+  #qr-container {
+    padding: 1rem;
+  }
+}
